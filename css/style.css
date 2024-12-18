@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto" , sans-serif;
+}
+#logo { 
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+.text-primary  {
+    color: salmon;
+}
+
+#navbar {
+    background-color: purple;
+    color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+#navbar a {
+    color: salmon;
+    text-decoration: none;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#navbar ul li {
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+    background-color: rgb(100, 151, 28);
+    border-radius: 5px;
+    color: black;
+}
+
+@media only screen and (max-width: 700px) {
+    #navbar ul {
+        margin-top: 1rem;
+    }
+}
+#showcase {
+    background: #333 url("../img/showcase.jpg") no-repeat center center/cover; 
+    height: 100vh;
+    width: 100%;
+    color: salmon;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    color: salmon;
+    background: purple;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #333;
+    color: black;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.py-1 {
+    padding: 1.5rem 0;
+}
+.py-2 {
+    padding: 2rem 0;
+}
+.py-3 {
+    padding: 3rem 0;
+}
+
+#what .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#what .item {
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i {
+    background: black;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.bg-light {
+    background:purple ;
+    color: white;
+}
+
+.bg-dark {
+    background: white;
+    color: purple;
+}
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+
+
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: black dotted 1px;
+}
+
+#who {
+    display: flex;
+}
+
+#who div {
+    flex: 1;
+}
+
+#who .who-img {
+    background: url("../img/movie.jpg") no-repeat center center/cover;
+}
+
+#footer a {
+    color: purple;
+    text-decoration: none;
+
+}
+
+#nastroje .items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#nastroje .item {
+    position: relative;
+    background-color: purple;
+    padding: 0.3rem;
+    margin-bottom: 2rem;
+}
+
+#nastroje .item:hover .overlay {
+    width: 100%;
+}
+
+
+#nastroje .image {
+    width: 400px;
+}
+
+#nastroje .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+#nastroje .text {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.my-table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.my-table td,
+.my-table th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.my-table tr:nth-child(even) {
+    background-color: gray;
+}
+
+.my-table tr:hover {
+    background-color: purple
+}
+
+.my-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--primary-color);
+    color: black;
+}
+
+label,
+input,
+legend,
+textarea {
+    margin: 1rem;
+    padding: 1rem;
+
+}
+
+label {
+    color: var(--primary-color);
+    font-weight: bold;
+
+}
+
+input,
+textarea {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+    border: none;
+    background-color: transparent;
+}
+
+input[type="text"],
+input[type="url"],
+textarea {
+    width: 95%;
+}
+
+input[type="radio"] {
+    box-shadow: none;
+}
+
+
+#parallax {
+    /* The image used */
+    background-image: url("../img/bg-parallax.jpg");
+    height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#parallax .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#parallax .content h2 {
+    background-color: purple;
+    padding: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+    }
+
+    
+}
+.text-center {
+    text-align: center; /* Zajistí zarovnání textu na střed */
+}
+
+.items {
+    display: flex;
+    justify-content: center; /* Zarovná prvky na střed horizontálně */
+    gap: 20px; /* Mezera mezi položkami */
+    flex-wrap: wrap; /* Umožní zalomení řádku na menších obrazovkách */
+}
+
+.item {
+    text-align: center; /* Zarovná obsah jednotlivých položek na střed */
+    margin: 10px;
+}
+
+.link {
+    text-decoration: none; /* Odstraní podtržení odkazů */
+    color: inherit; /* Zachová původní barvu textu */
+    font-weight: bold; /* Zvýrazní text */
+}
+
+.link:hover {
+    color: #007bff; /* Barva textu při přejetí myší */
+}
+
+
+#biografie h2 {
+    font-size: 2.5rem;
+    color: purple;
+    margin-bottom: 1rem;
+}
+
+#biografie h3 {
+    font-size: 2rem;
+    color: salmon;
+    margin-top: 2rem;
+}
+
+#biografie p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+
+#biografie .container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+}
+
+#biografie h3 {
+    border-bottom: 2px solid salmon;
+    padding-bottom: 0.5rem;
+}
+
+
+
+.image-container img {
+    border: 3px solid salmon;
+    margin: 1rem auto;
+    display: block;
+}
+
+
+.btn {
+    background-color: purple;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: salmon;
+    color: black;
+}
+
+#main-footer {
+    background-color: purple;
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+#main-footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+
+/* Global styles */
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Navbar styles */
+#navbar {
+    background-color: purple;
+    color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+#navbar a {
+    color: salmon;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#navbar ul li {
+    margin: 0.5rem;
+}
+
+#navbar ul li a:hover {
+    background-color: rgb(100, 151, 28);
+    border-radius: 5px;
+    color: black;
+}
+
+/* Header styles */
+header {
+    background-color: white;
+    color: purple;
+    padding: 1.5rem 0;
+    border-bottom: 3px solid purple;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Awards section styles */
+#awards {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+}
+
+#awards h2, #awards h3 {
+    color: purple;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#awards .list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+#awards .list li {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#awards .list ul {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+#awards .list ul li {
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#awards p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+/* Footer styles */
+#main-footer {
+    background-color: purple;
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+#main-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Button styles (if needed) */
+.btn {
+    display: inline-block;
+    background-color: purple;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: salmon;
+    color: black;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #awards h2, #awards h3 {
+        font-size: 1.8rem;
+    }
+
+    #awards p {
+        font-size: 1rem;
+    }
+}
+

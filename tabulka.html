@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quentin Tarantino | Režisér</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html">
+            <h1>Quentin Tarantino | Režisér 
+                <i class="fa-solid fa-film"></i>
+            </h1>
+        </a>
+        <ul>
+            <li><a href="#home"><i class="fa-solid fa-home"></i></a></li>
+            <li><a href="#filmy">FILMY     <i class="fa-solid fa-film"></i></a></li>
+            <li><a href="#ocenění">OCENĚNÍ   <i class="fa-solid fa-trophy"></i></a></li>
+            <li><a href="životopis">ŽIVOTOPIS    <i class="fa-solid fa-person"></i></a></li>
+            <li><a href="tabulka.html">TABULKA    <i class="fa-solid fa-folder"></i></a></li>
+            <li><a href="obrazky.html">Obrázky   <i class="fa-solid fa-camera"></i></a></li>
+        </ul>
+    </nav>
+    <section id="tabulka" class="py-1">
+        <div class="container">
+            <h2 class="m-heading text-center">Quentin Tarantino - Oblíbené filmy fanoušků
+            </h2>
+
+            <table class="my-table">
+                <tr>
+                    <th>Film</th>
+                    <th>Rok vydání</th>
+                    <th>Obsazení</th>
+                    <th>Ocenění</th>
+                </tr>
+                <tr>
+                    <td>Pulp Fiction</td>
+                    <td>1994</td>
+                    <td>John Travolta, Samuel L. Jackson, Uma Thurman</td>
+                    <td>Cannas film Festival - (Zlatá palma)</td>
+                </tr>
+                <tr>
+                    <td>Nespoutaný Django</td>
+                    <td>2012</td>
+                    <td>Christoph Waltz, Jamie Foxx, Samuel L. Jackson</td>
+                    <td>Academy awards - nejlepší původní scénář</td>
+                </tr>
+                <tr>
+                    <td>Čtyři pokoje</td>
+                    <td>1995</td>
+                    <td>Tim Roth, Antonio Banderas, Jennifer Beals</td>
+                    <td>MTV Movie award</td>
+                </tr>
+                <tr>
+                    <td>Tenkrát v Hollywoodu</td>
+                    <td>2019</td>
+                    <td>Brad Pitt, Leonardo Dicaprio</td>
+                    <td>Golden Globes - Nejlepší scénář</td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+    <section id="formular" class="py-1">
+
+        <div class="container">
+            <h2 class="m-heading text-center">Formulář</h2>
+
+
+
+            <form>
+                <fieldset>
+                  <legend>Nejoblíbenější film</legend>
+                   <label for="nazev">Název filmu</label><br>
+                   <input type="text" id="nazev" name="nazev"><br>
+                   <label for="url">Rok vydání</label><br>
+                   <input type="url" id="url" name="url"><br>
+                   <label for="popis">Proč je to vás Nejoblíbenější?</label><br>
+                   <textarea id="popis" name="textarea" rows="3">
+                   </textarea><br>
+                   <label for="cena">Jméno a příjmení</label><br>
+                   <input type="text" id="cena" name="cena"><br>
+                </fieldset>
+                <fieldset>
+                    <legend> Doplnění </legend>
+                    <h2>Dozvěděli jste se něco nového?</h2><br>
+                     <input type="radio" id="yes" name="zkouska" value="yes">
+                     <label for="no">Ano</label><br>
+                     <input type="radio" id="no" name="zkouska" value="no">
+                     <label for="no">Ne</label><br><br>
+                     <input type="checkbox" id="dokumentace" name="dokumentace" value="Dokumentace">
+                     <label for="dokumentace">Ano dozvěděl</label><br>
+                     <input type="checkbox" id="vykon" name="vykon" value="vykon">
+                     <label for="vykon">Ano, ale většinu jsem věděl</label><br>
+                     <input type="checkbox" id="platba" name="platba" value="platba">
+                     <label for="platba">Ne, ale bavil mě číst váš článek</label><br><br>
+                  </fieldset>
+                  <input type="submit" value="Odeslat">
+                </form>
+
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-dark">
+        <div class="text-center">
+            2024 <i class="fa-solid fa-sack-dollar"></i> <a href="mailto:D21901@oa-opava.cz">Štěpán Scholaster</a>
+        </div>
+    </footer>
+
+
+    
+</body>
+</html>
